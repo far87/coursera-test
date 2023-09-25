@@ -2,13 +2,42 @@
     <head>
         <title>Coursera Course</title>
         <author>Raffaele Maisto &copy;</author>
+        <!-- 
+        How we can see in the style tag, we can use three
+        different kinds of selectors for our elements in the html.
+        -->
+        <style>
+            
+            p {
+                color: blue;
+                font-size: 20px;
+            }
+
+            ul {
+                color: red;
+                font-size: 15px;
+            }
+
+            .align {
+                text-align: center;
+            }
+
+            #first_p {
+                color: green;
+                text-align: center;
+            }
+            
+            div,span {
+                background-color: yellow;
+            }
+        </style>
     </head>
     <body>
-        <h1>
+        <h1 class="align">
             Coursera Course
         </h1>
         
-        <p >I've added this paragraph </p>
+        <p id="first_p">I've added this paragraph </p>
         <p>I've added this paragraph for another example</p>
         <div>
             div elements are the most generic block tags.They want 
