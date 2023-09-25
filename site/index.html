@@ -1,7 +1,7 @@
 <html>
     <head>
         <title>Coursera Course</title>
-        <author>Raffaele Maisto</author>
+        <author>Raffaele Maisto &copy;</author>
     </head>
     <body>
         <h1>
@@ -10,14 +10,27 @@
         
         <p >I've added this paragraph </p>
         <p>I've added this paragraph for another example</p>
-        <div>div elements are the most generic block tags.They want 
+        <div>
+            div elements are the most generic block tags.They want 
             a line only for them.So another div element will be placed 
             on another line.
         </div>
+        <section id="section1">
+            This is section 1
+        </section>
+        <section id="section2">
+            This is section 2
+        </section>
+        <section id="section3">
+            This is section 3
+        </section>
+        <section id="section6">
+            This is section 6
+        </section>
         <div>Another div element</div>
         <span>
             Span element is the most generic inline element and this span element
-            is on a new line because it follows a div element that wants the line only for him
+            is on a new line because it follows a div element that wants the line only&nbsp;for&nbsp;him
         </span>
         <div>
             another div element 
@@ -26,6 +39,46 @@
                 it is declared inside it
             </span>
         </div>
+        <div>
+            Now let's talk about semantic element.
+            Semantic elements are elements whose important and meaning
+            is inside their name.They so help developer to understand and structure
+            the page, but by the point of view of rendering they are rendered like
+            div or span element. 
+        </div>
+        <div>
+            Vediamo l'esempio di una lista unordered
+            <ul>
+                <li>Biscotti</li>
+                <li>Pasta</li>
+                    <ul>
+                        <li>Senza Glutine</li>
+                        <li>Integrale</li>
+                        <li>Classica</li>
+                    </ul>
+                <li>Uova</li>
+            </ul>
+        </div>
+        <div>
+            Esempio di lista ordered
+            <ol>
+                <li>Primo passo</li>
+                <li>Secondo passo</li>
+                <li>Terzo passo</li>
+                    <ol>
+                        <li>do it first</li>
+                        <li>do it second</li>
+                    </ol>
+                <li>Quarto passo</li>    
+            </ol>
+        </div>
+        <a href="http://www.facebook.com" target="_blank">Facebook</a>
+        <a href="#section1">s1</a>
+        <a href="#section2">s2</a>
+        <a href="#section3">s3</a>
+        <a name="section6">s6</a>
+
+        
         
     </body>
 </html>
