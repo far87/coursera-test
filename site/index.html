@@ -19,7 +19,7 @@
             }
 
             .backcolor {
-                color: crimson;
+                color: rgb(77, 220, 20);
             }
 
             .align {
@@ -40,6 +40,8 @@
                 color: green;
                 text-align: center;
             }
+            /*We can combine selectors and obtain more precise
+            selectors.Let's take a look following*/
             /*applies to div and span elements*/
             div,span {
                 background-color: yellow;
@@ -65,6 +67,13 @@
                 background-color: aqua;
             }
 
+
+
+            /*We can also add to a selector a pseudo-class.
+            It's a specification that allows us to changing a style
+            of an elements with user interactions with it.Let's take a look 
+            following*/
+
             a:hover {
                 background-color: red;
             }
@@ -86,6 +95,16 @@
                 background-color: brown;
             }
 
+            .backcolor p{
+                font-size: 40px;
+            }
+
+            div .backcolor{
+                background-color: rgb(255, 127, 221);
+            }
+
+
+
         </style>
     </head>
     <body>
@@ -97,7 +116,8 @@
         <p id="first_p">I've added this paragraph </p>
         <p class="align">I've added this paragraph for another example</p>
         <p class="cl">Trying css class </p>
-        <div>
+        <div class="backcolor">
+            <p>P element inside a div which class is backcolor</p>
             div elements are the most generic block tags.They want 
             a line only for them.So another div element will be placed 
             on another line.
@@ -123,9 +143,10 @@
         </span>
         <div>
             another div element 
-            <span>
+            <span class="backcolor">
                 This SPAN element is inline with this div element because
-                it is declared inside it
+                it is declared inside it. Also,this span element has class backcolor
+                inside a div element
             </span>
         </div>
         <div>
