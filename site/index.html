@@ -18,44 +18,104 @@
                 font-size: 15px;
             }
 
+            .backcolor {
+                color: crimson;
+            }
+
             .align {
                 text-align: center;
             }
+            /*applies to p elements whose class attribute is equal to align*/
+            p.align {
+                color: brown;
+            }
 
-            #first_p {
+            p.cl{
+                background-color: green;
+                text-align: end;
+            }
+
+            /*applies to element whose id is first_p */
+            #first_p:hover {
                 color: green;
                 text-align: center;
             }
-            
+            /*applies to div and span elements*/
             div,span {
                 background-color: yellow;
             }
+            /*applies to span elements that are direct childs of a div element*/
+            div>span {
+                background-color: aquamarine;
+            }
+
+            /*applies to span elements that are inside a div element, not only to direct
+             childs*/
+            div span {
+                background-color: coral;
+            }
+
+            /*applies to ol element that is a direct child of div element*/
+            div>ol{
+                background-color: gray;
+            }
+
+            /*applies all elements with class attribute equals to either backcolor or align*/
+            .backcolor,.align {
+                background-color: aqua;
+            }
+
+            a:hover {
+                background-color: red;
+            }
+
+            ul li:nth-last-child(odd){
+                font-size: 30px;
+            }
+
+            div section:nth-child(odd){
+                background-color: aqua;
+            }
+            
+            div section:nth-child(even){
+                background-color: green;
+            }
+
+            div section:nth-child(3):hover{
+                font-size: 30px;
+                background-color: brown;
+            }
+
         </style>
     </head>
     <body>
         <h1 class="align">
             Coursera Course
         </h1>
+        <h2 class="backcolor">An h2 element</h2>
         
         <p id="first_p">I've added this paragraph </p>
-        <p>I've added this paragraph for another example</p>
+        <p class="align">I've added this paragraph for another example</p>
+        <p class="cl">Trying css class </p>
         <div>
             div elements are the most generic block tags.They want 
             a line only for them.So another div element will be placed 
             on another line.
         </div>
-        <section id="section1">
-            This is section 1
-        </section>
-        <section id="section2">
-            This is section 2
-        </section>
-        <section id="section3">
-            This is section 3
-        </section>
-        <section id="section6">
-            This is section 6
-        </section>
+        <div>
+            <section id="section1">
+                This is section 1
+            </section>
+            <section id="section2">
+                This is section 2
+            </section>
+            <section id="section3">
+                This is section 3
+            </section>
+            <section id="section6">
+                This is section 6
+            </section>
+        </div>
         <div>Another div element</div>
         <span>
             Span element is the most generic inline element and this span element
@@ -74,6 +134,13 @@
             is inside their name.They so help developer to understand and structure
             the page, but by the point of view of rendering they are rendered like
             div or span element. 
+        </div>
+        <div>
+            <article>
+                <span>This span is not a direct child of parent 
+                    div element
+                </span>
+            </article>
         </div>
         <div>
             Vediamo l'esempio di una lista unordered
