@@ -2,111 +2,26 @@
     <head>
         <title>Coursera Course</title>
         <author>Raffaele Maisto &copy;</author>
-        <!-- 
-        How we can see in the style tag, we can use three
-        different kinds of selectors for our elements in the html.
-        -->
-        <style>
-            
-            p {
-                color: blue;
-                font-size: 20px;
-            }
-
-            ul {
-                color: red;
-                font-size: 15px;
-            }
-
-            .backcolor {
-                color: rgb(77, 220, 20);
-            }
-
-            .align {
-                text-align: center;
-            }
-            /*applies to p elements whose class attribute is equal to align*/
-            p.align {
-                color: brown;
-            }
-
-            p.cl{
-                background-color: green;
-                text-align: end;
-            }
-
-            /*applies to element whose id is first_p */
-            #first_p:hover {
-                color: green;
-                text-align: center;
-            }
-            /*We can combine selectors and obtain more precise
-            selectors.Let's take a look following*/
-            /*applies to div and span elements*/
-            div,span {
-                background-color: yellow;
-            }
-            /*applies to span elements that are direct childs of a div element*/
-            div>span {
-                background-color: aquamarine;
-            }
-
-            /*applies to span elements that are inside a div element, not only to direct
-             childs*/
-            div span {
-                background-color: coral;
-            }
-
-            /*applies to ol element that is a direct child of div element*/
-            div>ol{
-                background-color: gray;
-            }
-
-            /*applies all elements with class attribute equals to either backcolor or align*/
-            .backcolor,.align {
-                background-color: aqua;
-            }
-
-
-
-            /*We can also add to a selector a pseudo-class.
-            It's a specification that allows us to changing a style
-            of an elements with user interactions with it.Let's take a look 
-            following*/
-
-            a:hover {
-                background-color: red;
-            }
-
-            ul li:nth-last-child(odd){
-                font-size: 30px;
-            }
-
-            div section:nth-child(odd){
-                background-color: aqua;
-            }
-            
-            div section:nth-child(even){
-                background-color: green;
-            }
-
-            div section:nth-child(3):hover{
-                font-size: 30px;
-                background-color: brown;
-            }
-
-            .backcolor p{
-                font-size: 40px;
-            }
-
-            div .backcolor{
-                background-color: rgb(255, 127, 221);
-            }
-        </style>
-        <!--For style we can use, and it's the better method,an external .css file-->
-        <link rel="stylesheet" href="index.css">
-        <!--Cascading is the algorithm used to determine wich css rule
-        "wins when there is a conflict beetween two rules."-->
+       <style>
+        /*For inheritance every child elements in the body will inherit 
+        these styles*/
+        body {
+            background-color: antiquewhite;
+            font-size: 110%;
+        }
+        /*For origin rule,because p style is defined after body syle,it ovverrides
+        body style*/
+        p {
+            background-color: red;
+            color:blue;
+        }
+       </style>
+       <!--<link rel="stylesheet" href="index.css">-->
+       <!---In this case , because of the style tag is placed before the link tag
+    , for background-color of element p is selected value in the external file.
+    While, because of color is only defined in style tag, in this case is acted
+    what is said a merge, and color blue is assigned to p text.
+    Situation changes if we place style tag after link tag. Try it!-->
     </head>
     <body>
         <h1 class="align">
