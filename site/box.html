@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<head>
+    <title>The box model</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            margin: 0;
+            background-color: gray;
+        }
+        h1 {
+            margin-bottom: 30px;
+        }
+        #box {
+            padding: 15px ;
+            background-color: blue;
+            border: 5px solid black;
+            margin: 40px;
+            width: 100px;
+           
+        }
+        #content {
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+    <h1>Box Model</h1>
+    <div id="box">
+        <div id="content">
+            This is the content box
+        </div>
+    </div>
+</body>
