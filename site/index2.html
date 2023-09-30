@@ -15,9 +15,14 @@
             background-color: red;
             color:blue;
         }
+        #p-font{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: white;
+        }
        </style>
        <!--<link rel="stylesheet" href="index.css">-->
-       <!---In this case , because of the style tag is placed before the link tag
+       <!---rel attribute of link tag defines the relation between html and css file
+        indicated in href attribute.In this case , because of the style tag is placed before the link tag
     , for background-color of element p is selected value in the external file.
     While, because of color is only defined in style tag, in this case is acted
     what is said a merge, and color blue is assigned to p text.
@@ -40,73 +45,8 @@
             a line only for them.So another div element will be placed 
             on another line.
         </div>
-        <div>
-            <section id="section1">
-                This is section 1
-            </section>
-            <section id="section2">
-                This is section 2
-            </section>
-            <section id="section3">
-                This is section 3
-            </section>
-            <section id="section6">
-                This is section 6
-            </section>
-        </div>
-        <div>Another div element</div>
-        <span>
-            Span element is the most generic inline element and this span element
-            is on a new line because it follows a div element that wants the line only&nbsp;for&nbsp;him
-        </span>
-        <div>
-            another div element 
-            <span class="backcolor">
-                This SPAN element is inline with this div element because
-                it is declared inside it. Also,this span element has class backcolor
-                inside a div element
-            </span>
-        </div>
-        <div>
-            Now let's talk about semantic element.
-            Semantic elements are elements whose important and meaning
-            is inside their name.They so help developer to understand and structure
-            the page, but by the point of view of rendering they are rendered like
-            div or span element. 
-        </div>
-        <div>
-            <article>
-                <span>This span is not a direct child of parent 
-                    div element
-                </span>
-            </article>
-        </div>
-        <div>
-            Vediamo l'esempio di una lista unordered
-            <ul>
-                <li>Biscotti</li>
-                <li>Pasta</li>
-                    <ul>
-                        <li>Senza Glutine</li>
-                        <li>Integrale</li>
-                        <li>Classica</li>
-                    </ul>
-                <li>Uova</li>
-            </ul>
-        </div>
-        <div>
-            Esempio di lista ordered
-            <ol>
-                <li>Primo passo</li>
-                <li>Secondo passo</li>
-                <li>Terzo passo</li>
-                    <ol>
-                        <li>do it first</li>
-                        <li>do it second</li>
-                    </ol>
-                <li>Quarto passo</li>    
-            </ol>
-        </div>
+        <p id="p-font">P element in wich you have modified property font-family</p>
+
         <a href="http://www.facebook.com" target="_blank">Facebook</a>
         <a href="#section1">s1</a>
         <a href="#section2">s2</a>
