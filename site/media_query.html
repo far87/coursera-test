@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<head>
+    <style>
+        p{
+            border: 1px solid black;
+        }
+        #p1{
+            background-color: aqua;
+            width: 150px;
+            height: 150px;
+        }
+        #p2{
+            background-color: blue;
+            width: 50px;
+            height: 50px;
+        }
+        @media(min-width: 1200px){
+            #p1{
+                width: 80%;
+            }
+            #p2{
+                width: 150px;
+                height: 150px;
+            }
+        }
+        @media((min-width: 992px)and(max-width: 1110px)){
+            #p1{
+                width: 80%;
+            }
+            #p2{
+                width: 50px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Media Query</h1>
+    <p id="p1"></p>
+    <p id="p2"></p>
+</body>
