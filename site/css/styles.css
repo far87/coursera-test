@@ -43,3 +43,79 @@ body{
     margin-bottom: 0;
     line-height: .75;
 }
+
+.navbar-brand p span {
+    vertical-align: middle;
+}
+
+#nav-list{
+    margin-top: 10px;
+}
+
+#nav-list a{
+    color:#951C49;
+   text-align: center;
+}
+
+#nav-list a:hover{
+   background-color: #E7E7E7;
+   
+}
+#collapsable-nav{
+    float: left;
+    margin-left: 300px;
+}
+
+.navbar-header button.navbar-toggle,.navbar-header .icon-bar{
+    border: 1px solid black;
+}
+
+.navbar-header button.navbar-toggle{
+    clear: both;
+    margin-top: -30px;
+}
+
+#fr{
+    width: 10%;
+    height: 10%;
+}
+
+#address,#address2{
+    background-color: #557c3e;
+    color:black;
+    width: 100px;
+    margin-left: 15px;
+}
+section.row div{
+    margin-bottom: 10px;
+    border: 1px solid black;
+    
+}
+
+#div-container{
+    background-color: #E7E7E7;
+}
+
+@media(min-width: 1200px){
+    .jumbotron{
+        background: url('../images/ristorante-noce.png') no-repeat;
+        height: 800px;
+        box-shadow: 0 0 50px #3f0c1f;
+        border: 2px solid #3f0c1f;    
+    }
+}
+
+@media(max-width: 479px){
+
+    .col-xxs-12{
+        position: relative;
+        min-height: 1px;
+        padding-right: 15px;
+        padding-left: 15px;
+        float: left;
+        width: 100%;
+    }
+}
+
+
+ 
