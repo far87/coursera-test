@@ -17,3 +17,10 @@ console.log(ar);
 //loop over an array and print out its value
 for(var p in array)
     console.log(array[p]);
+
+//Array in Javascript are considered like object, so we can assign them properties using the dot notation:
+
+ar.property1="proprietà 1";
+
+for(var p in ar)
+    console.log(ar[p]);//this will print also proprietà 1
